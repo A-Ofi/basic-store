@@ -1,0 +1,122 @@
+:root{
+    --black: #012d30;
+    --dark-green: #2c4a3e;
+    --green: #8e9861;
+    --yellow: #e7d9aa;
+    --orange: #bf6c5a;
+}
+
+.stick *{
+    position: sticky;
+    top: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0; 
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% auto 1%;
+    width: 60%; 
+    padding: 1% 0%;  
+    font-size: large;
+    font-weight: bold;
+    border-radius: 5px;
+    color: var(--yellow);
+    background-color: var(--orange);;
+}
+
+table{
+    table-layout: fixed;
+    width: 70%;
+    margin: 0% auto 1%;
+    align-self: center;
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+
+
+.tidy th:nth-child(1){
+    width: 4%;
+}
+
+.tidy th:nth-child(2){
+    width: 20%;
+}
+
+.tidy th:nth-child(3){
+    width: 23%;
+}
+
+.tidy th:nth-child(4){
+    width: 15%;
+}
+
+.tidy th:nth-child(5){
+    width: 4%;
+    background-color: transparent;
+}
+
+.tidy td:nth-child(1),
+.tidy td:nth-child(4){
+    text-align: center;
+}
+
+.tidy td:nth-child(5){
+    background-color: var(--orange);
+    text-align: center;
+}
+
+th{
+    color: var(--black);
+    background-color: var(--green);
+    border-radius: 5px;
+    padding: 1.7% 0%;
+    font-size: large;
+}
+
+td{
+    color: var(--black);
+    background-color: var(--yellow);
+    border-radius: 5px;
+    padding: 1%;
+    
+}
+
+#pag{
+    margin: 0 auto 5%;
+    text-align: center;
+}
+
+.edit{
+    color:var(--yellow);
+}
+
+a{
+    color:var(--green);
+    font-weight: bold;
+}
+
+.unclickable{
+    pointer-events: none;
+    text-decoration: none;
+}
+
+.create-btn{
+    display: block;
+    margin: 0% auto 10%;
+    padding: 2%;
+    border-radius: 5px;
+    font-weight: bold;
+    color:var(--yellow);
+    background-color: var(--orange);
+}
+
+.button-link{
+    text-decoration: none;
+}

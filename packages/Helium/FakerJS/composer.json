@@ -1,0 +1,10 @@
+{
+    "name": "helium/faker-js",
+    "description": "This package responsible for running .FakerServer.js file, fakerJS ( http://npmjs.com/package/faker ) is used instance of PHP faker beacuse it has English text",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Helium\\FakerJS\\": "src/"
+        }
+    }
+}

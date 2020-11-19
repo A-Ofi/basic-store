@@ -1,0 +1,77 @@
+:root{
+    --black: #012d30;
+    --dark-green: #2c4a3e;
+    --green: #8e9861;
+    --yellow: #e7d9aa;
+    --orange: #bf6c5a;
+
+}
+
+body{
+    display: grid;
+    grid-template-areas: 
+    ". a a ."
+    ". a a .";
+}
+
+.form-card{
+    grid-area: a;
+    align-self: center;
+    justify-self: center;
+    min-width: 425px;
+    min-height: 400px;
+    background-color: var(--green);
+    border-radius: 25px;
+    box-shadow: 0 0 30px var(--black);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-title{
+    text-align: center;
+    font-weight: 900;
+    font-size: xx-large;
+    color: var(--black);
+    font-family: Georgia, Serif;
+    margin-top: 20%;
+}
+
+.fields {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+input{
+    border-radius: 10px;
+    min-height: 100%;
+    max-width: 100%;
+    background-color: var(--yellow);
+    font-family: Georgia, Serif;
+    padding: 3px 8px;
+}
+
+button{
+    margin-top: 8%;
+    padding: 3% 10%;
+    border-radius: 10px;
+    align-self: center;
+    background-color: var(--orange);
+    color: var(--yellow);
+    font-family: Georgia, Serif;
+    font-weight: bold;
+}
+
+.err-msg{
+    text-align: center;
+    font-weight: bold;
+    background-color: var(--orange);
+    color: var(--yellow);
+}

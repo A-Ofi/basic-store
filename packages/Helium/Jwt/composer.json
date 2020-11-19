@@ -1,0 +1,13 @@
+{
+    "name": "helium/jwt",
+    "description": "JWT authenticator",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Helium\\Jwt\\": "src/"
+        }
+    },
+    "require": {
+        "firebase/php-jwt": "^5.2"
+    }
+}

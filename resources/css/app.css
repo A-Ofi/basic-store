@@ -1,0 +1,19 @@
+:root{
+  --black: #012d30;
+  --dark-green: #2c4a3e;
+  --green: #8e9861;
+  --yellow: #e7d9aa;
+  --orange: #bf6c5a;
+
+}
+
+html {
+    height: 100%;
+}
+
+  body {
+    min-height: 100%;
+    background-size: 1200% 1200%;
+    background-color: var(--dark-green);
+    animation: AnimationName 14s ease infinite;
+  }

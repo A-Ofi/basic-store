@@ -1,0 +1,58 @@
+:root{
+    --black: #012d30;
+    --dark-green: #2c4a3e;
+    --green: #8e9861;
+    --yellow: #e7d9aa;
+    --orange: #bf6c5a;
+  
+  }
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 10%;
+}
+
+.card{
+    margin: 0% 5%;
+    box-shadow: 0 0 30px var(--black);
+    background-color: var(--green);
+    width: min-content;
+    height: min-content;
+    border-radius: 15px;
+    display: flex;
+    padding: 25px;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 1.2s ease-in;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.card .card-image{
+    flex-grow: 2;
+}
+
+.card .card-title{
+    font-size: x-large;
+    font-weight: bold;
+    color: var(--black);
+}
+
+.card-description{
+    max-height: 0;
+    transition: max-height 1.4s linear;
+    overflow: hidden;
+    color: var(--black);
+    text-align: center;
+}
+
+.card:hover{
+    box-shadow: 0 0 90px 10px black;
+}
+
+.card:hover .card-description{
+    max-height: 250px;
+}

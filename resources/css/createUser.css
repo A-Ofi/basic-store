@@ -1,0 +1,91 @@
+:root{
+    --black: #012d30;
+    --dark-green: #2c4a3e;
+    --green: #8e9861;
+    --yellow: #e7d9aa;
+    --orange: #bf6c5a;
+  }
+
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0; 
+}
+
+.title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10% auto 1%;
+  width: 35%; 
+  padding: 1% 0%;  
+  font-size: large;
+  font-weight: bold;
+  border-radius: 10px;
+  color: var(--yellow);
+  background-color: var(--orange);;
+}
+
+.info-card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0% auto;
+  width: 100%;
+}
+
+form{
+  width: 40%;
+  padding: 1% 0%;
+  padding-left: 4%;
+  border-radius: 15px;
+  background-color: var(--green);
+}
+
+.name-cell,
+.email-cell,
+.password-cell,
+.confirmation-cell,
+.button-cell{
+  margin: 3% 0%;
+}
+
+.name-cell > label,
+.email-cell > label,
+.password-cell > label,
+.confirmation-cell > label{
+  display: inline-block;
+  width: 35%;
+  color: var(--black);
+  font-weight: bold;
+}
+
+.name-cell > input,
+.email-cell > input,
+.password-cell > input,
+.confirmation-cell > input{
+  margin-left: 5%;
+  display: inline-block;
+  width: 40%;
+  background-color: var(--yellow);
+  padding: 2%;
+  border-radius: 10px;
+  color: var(--black);
+}
+
+.button-cell{
+  text-align: right;
+  padding-right: 15%;
+}
+
+.form-btn{
+  display: inline-block;
+  margin-top: 5%;
+  padding: 2% 1%;
+  height: 10%;
+  width: 37.5%;
+  border-radius: 10px;
+  font-weight: bold;
+  background-color: var(--orange);;
+  color:var(--yellow);
+}
